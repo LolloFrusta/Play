@@ -1,0 +1,77 @@
+C:\Users\Utente\Desktop\AIV\Consegne\Play!\Play!\obj\Debug\Play!.csprojAssemblyReference.cache
+C:\Users\Utente\Desktop\AIV\Consegne\Play!\Play!\obj\Debug\Play!.csproj.CoreCompileInputs.cache
+C:\Users\Utente\Desktop\AIV\Consegne\Play!\Play!\bin\Debug\Assets\SPRITES\ENEMIES\BLOB\ENEMIES_PixelPackTOPDOWN8BIT_Blob Death.gif
+C:\Users\Utente\Desktop\AIV\Consegne\Play!\Play!\bin\Debug\Assets\SPRITES\ENEMIES\BLOB\ENEMIES_PixelPackTOPDOWN8BIT_Blob Hurt.gif
+C:\Users\Utente\Desktop\AIV\Consegne\Play!\Play!\bin\Debug\Assets\SPRITES\ENEMIES\BLOB\ENEMIES_PixelPackTOPDOWN8BIT_Blob Idle.gif
+C:\Users\Utente\Desktop\AIV\Consegne\Play!\Play!\bin\Debug\Assets\SPRITES\ENEMIES\BLOB\ENEMIES_PixelPackTOPDOWN8BIT_Blob Walk.gif
+C:\Users\Utente\Desktop\AIV\Consegne\Play!\Play!\bin\Debug\Assets\SPRITES\ENEMIES\NEGABLOB\ENEMIES_PixelPackTOPDOWN8BIT_NegaBlob Death.gif
+C:\Users\Utente\Desktop\AIV\Consegne\Play!\Play!\bin\Debug\Assets\SPRITES\ENEMIES\NEGABLOB\ENEMIES_PixelPackTOPDOWN8BIT_NegaBlob Hurt.gif
+C:\Users\Utente\Desktop\AIV\Consegne\Play!\Play!\bin\Debug\Assets\SPRITES\ENEMIES\NEGABLOB\ENEMIES_PixelPackTOPDOWN8BIT_NegaBlob Idle.gif
+C:\Users\Utente\Desktop\AIV\Consegne\Play!\Play!\bin\Debug\Assets\SPRITES\ENEMIES\NEGABLOB\ENEMIES_PixelPackTOPDOWN8BIT_NegaBlob Walk.gif
+C:\Users\Utente\Desktop\AIV\Consegne\Play!\Play!\bin\Debug\Assets\SPRITES\ENEMIES\SNAKE\ENEMIES_PixelPackTOPDOWN8BIT_Snake Death.gif
+C:\Users\Utente\Desktop\AIV\Consegne\Play!\Play!\bin\Debug\Assets\SPRITES\ENEMIES\SNAKE\ENEMIES_PixelPackTOPDOWN8BIT_Snake Idle D.gif
+C:\Users\Utente\Desktop\AIV\Consegne\Play!\Play!\bin\Debug\Assets\SPRITES\ENEMIES\SNAKE\ENEMIES_PixelPackTOPDOWN8BIT_Snake Idle R.gif
+C:\Users\Utente\Desktop\AIV\Consegne\Play!\Play!\bin\Debug\Assets\SPRITES\ENEMIES\SNAKE\ENEMIES_PixelPackTOPDOWN8BIT_Snake Idle U.gif
+C:\Users\Utente\Desktop\AIV\Consegne\Play!\Play!\bin\Debug\Assets\SPRITES\ENEMIES\SNAKE\ENEMIES_PixelPackTOPDOWN8BIT_Snake Walk D.gif
+C:\Users\Utente\Desktop\AIV\Consegne\Play!\Play!\bin\Debug\Assets\SPRITES\ENEMIES\SNAKE\ENEMIES_PixelPackTOPDOWN8BIT_Snake Walk R.gif
+C:\Users\Utente\Desktop\AIV\Consegne\Play!\Play!\bin\Debug\Assets\SPRITES\ENEMIES\SNAKE\ENEMIES_PixelPackTOPDOWN8BIT_Snake Walk U.gif
+C:\Users\Utente\Desktop\AIV\Consegne\Play!\Play!\bin\Debug\Assets\SPRITES\ENEMIES\SORCERER\ENEMIES_PixelPackTOPDOWN8BIT_Sorcerer Attack D.gif
+C:\Users\Utente\Desktop\AIV\Consegne\Play!\Play!\bin\Debug\Assets\SPRITES\ENEMIES\SORCERER\ENEMIES_PixelPackTOPDOWN8BIT_Sorcerer Attack R.gif
+C:\Users\Utente\Desktop\AIV\Consegne\Play!\Play!\bin\Debug\Assets\SPRITES\ENEMIES\SORCERER\ENEMIES_PixelPackTOPDOWN8BIT_Sorcerer Attack U.gif
+C:\Users\Utente\Desktop\AIV\Consegne\Play!\Play!\bin\Debug\Assets\SPRITES\ENEMIES\SORCERER\ENEMIES_PixelPackTOPDOWN8BIT_Sorcerer Death D.gif
+C:\Users\Utente\Desktop\AIV\Consegne\Play!\Play!\bin\Debug\Assets\SPRITES\ENEMIES\SORCERER\ENEMIES_PixelPackTOPDOWN8BIT_Sorcerer Hurt D.gif
+C:\Users\Utente\Desktop\AIV\Consegne\Play!\Play!\bin\Debug\Assets\SPRITES\ENEMIES\SORCERER\ENEMIES_PixelPackTOPDOWN8BIT_Sorcerer Hurt R.gif
+C:\Users\Utente\Desktop\AIV\Consegne\Play!\Play!\bin\Debug\Assets\SPRITES\ENEMIES\SORCERER\ENEMIES_PixelPackTOPDOWN8BIT_Sorcerer Hurt U.gif
+C:\Users\Utente\Desktop\AIV\Consegne\Play!\Play!\bin\Debug\Assets\SPRITES\ENEMIES\SORCERER\ENEMIES_PixelPackTOPDOWN8BIT_Sorcerer Idle D.gif
+C:\Users\Utente\Desktop\AIV\Consegne\Play!\Play!\bin\Debug\Assets\SPRITES\ENEMIES\SORCERER\ENEMIES_PixelPackTOPDOWN8BIT_Sorcerer Idle R.gif
+C:\Users\Utente\Desktop\AIV\Consegne\Play!\Play!\bin\Debug\Assets\SPRITES\ENEMIES\SORCERER\ENEMIES_PixelPackTOPDOWN8BIT_Sorcerer Idle U.gif
+C:\Users\Utente\Desktop\AIV\Consegne\Play!\Play!\bin\Debug\Assets\SPRITES\ENEMIES\SORCERER\ENEMIES_PixelPackTOPDOWN8BIT_Sorcerer Walk D.gif
+C:\Users\Utente\Desktop\AIV\Consegne\Play!\Play!\bin\Debug\Assets\SPRITES\ENEMIES\SORCERER\ENEMIES_PixelPackTOPDOWN8BIT_Sorcerer Walk R.gif
+C:\Users\Utente\Desktop\AIV\Consegne\Play!\Play!\bin\Debug\Assets\SPRITES\ENEMIES\SORCERER\ENEMIES_PixelPackTOPDOWN8BIT_Sorcerer Walk U.gif
+C:\Users\Utente\Desktop\AIV\Consegne\Play!\Play!\bin\Debug\Assets\SPRITES\ENEMIES\spritesheets\ENEMIES8bit_Blob Death.png
+C:\Users\Utente\Desktop\AIV\Consegne\Play!\Play!\bin\Debug\Assets\SPRITES\ENEMIES\spritesheets\ENEMIES8bit_Blob Hurt.png
+C:\Users\Utente\Desktop\AIV\Consegne\Play!\Play!\bin\Debug\Assets\SPRITES\ENEMIES\spritesheets\ENEMIES8bit_Blob Idle.png
+C:\Users\Utente\Desktop\AIV\Consegne\Play!\Play!\bin\Debug\Assets\SPRITES\ENEMIES\spritesheets\ENEMIES8bit_Blob Walk.png
+C:\Users\Utente\Desktop\AIV\Consegne\Play!\Play!\bin\Debug\Assets\SPRITES\ENEMIES\spritesheets\ENEMIES8bit_NegaBlob Death.png
+C:\Users\Utente\Desktop\AIV\Consegne\Play!\Play!\bin\Debug\Assets\SPRITES\ENEMIES\spritesheets\ENEMIES8bit_NegaBlob Hurt.png
+C:\Users\Utente\Desktop\AIV\Consegne\Play!\Play!\bin\Debug\Assets\SPRITES\ENEMIES\spritesheets\ENEMIES8bit_NegaBlob Idle.png
+C:\Users\Utente\Desktop\AIV\Consegne\Play!\Play!\bin\Debug\Assets\SPRITES\ENEMIES\spritesheets\ENEMIES8bit_NegaBlob Walk.png
+C:\Users\Utente\Desktop\AIV\Consegne\Play!\Play!\bin\Debug\Assets\SPRITES\ENEMIES\spritesheets\ENEMIES8bit_Snake Death.png
+C:\Users\Utente\Desktop\AIV\Consegne\Play!\Play!\bin\Debug\Assets\SPRITES\ENEMIES\spritesheets\ENEMIES8bit_Snake Idle D.png
+C:\Users\Utente\Desktop\AIV\Consegne\Play!\Play!\bin\Debug\Assets\SPRITES\ENEMIES\spritesheets\ENEMIES8bit_Snake Idle R.png
+C:\Users\Utente\Desktop\AIV\Consegne\Play!\Play!\bin\Debug\Assets\SPRITES\ENEMIES\spritesheets\ENEMIES8bit_Snake Idle U.png
+C:\Users\Utente\Desktop\AIV\Consegne\Play!\Play!\bin\Debug\Assets\SPRITES\ENEMIES\spritesheets\ENEMIES8bit_Snake Walk D.png
+C:\Users\Utente\Desktop\AIV\Consegne\Play!\Play!\bin\Debug\Assets\SPRITES\ENEMIES\spritesheets\ENEMIES8bit_Snake Walk R.png
+C:\Users\Utente\Desktop\AIV\Consegne\Play!\Play!\bin\Debug\Assets\SPRITES\ENEMIES\spritesheets\ENEMIES8bit_Snake Walk U.png
+C:\Users\Utente\Desktop\AIV\Consegne\Play!\Play!\bin\Debug\Assets\SPRITES\ENEMIES\spritesheets\ENEMIES8bit_Sorcerer Attack D.png
+C:\Users\Utente\Desktop\AIV\Consegne\Play!\Play!\bin\Debug\Assets\SPRITES\ENEMIES\spritesheets\ENEMIES8bit_Sorcerer Attack R.png
+C:\Users\Utente\Desktop\AIV\Consegne\Play!\Play!\bin\Debug\Assets\SPRITES\ENEMIES\spritesheets\ENEMIES8bit_Sorcerer Attack U.png
+C:\Users\Utente\Desktop\AIV\Consegne\Play!\Play!\bin\Debug\Assets\SPRITES\ENEMIES\spritesheets\ENEMIES8bit_Sorcerer Death D.png
+C:\Users\Utente\Desktop\AIV\Consegne\Play!\Play!\bin\Debug\Assets\SPRITES\ENEMIES\spritesheets\ENEMIES8bit_Sorcerer Hurt D.png
+C:\Users\Utente\Desktop\AIV\Consegne\Play!\Play!\bin\Debug\Assets\SPRITES\ENEMIES\spritesheets\ENEMIES8bit_Sorcerer Hurt R.png
+C:\Users\Utente\Desktop\AIV\Consegne\Play!\Play!\bin\Debug\Assets\SPRITES\ENEMIES\spritesheets\ENEMIES8bit_Sorcerer Hurt U.png
+C:\Users\Utente\Desktop\AIV\Consegne\Play!\Play!\bin\Debug\Assets\SPRITES\ENEMIES\spritesheets\ENEMIES8bit_Sorcerer Idle D.png
+C:\Users\Utente\Desktop\AIV\Consegne\Play!\Play!\bin\Debug\Assets\SPRITES\ENEMIES\spritesheets\ENEMIES8bit_Sorcerer Idle R.png
+C:\Users\Utente\Desktop\AIV\Consegne\Play!\Play!\bin\Debug\Assets\SPRITES\ENEMIES\spritesheets\ENEMIES8bit_Sorcerer Idle U.png
+C:\Users\Utente\Desktop\AIV\Consegne\Play!\Play!\bin\Debug\Assets\SPRITES\ENEMIES\spritesheets\ENEMIES8bit_Sorcerer Walk D.png
+C:\Users\Utente\Desktop\AIV\Consegne\Play!\Play!\bin\Debug\Assets\SPRITES\ENEMIES\spritesheets\ENEMIES8bit_Sorcerer Walk R.png
+C:\Users\Utente\Desktop\AIV\Consegne\Play!\Play!\bin\Debug\Assets\SPRITES\ENEMIES\spritesheets\ENEMIES8bit_Sorcerer Walk U.png
+C:\Users\Utente\Desktop\AIV\Consegne\Play!\Play!\bin\Debug\Play!.exe.config
+C:\Users\Utente\Desktop\AIV\Consegne\Play!\Play!\bin\Debug\Play!.exe
+C:\Users\Utente\Desktop\AIV\Consegne\Play!\Play!\bin\Debug\Play!.pdb
+C:\Users\Utente\Desktop\AIV\Consegne\Play!\Play!\bin\Debug\aiv-audio.dll
+C:\Users\Utente\Desktop\AIV\Consegne\Play!\Play!\bin\Debug\aiv-fast2d.dll
+C:\Users\Utente\Desktop\AIV\Consegne\Play!\Play!\bin\Debug\NVorbis.dll
+C:\Users\Utente\Desktop\AIV\Consegne\Play!\Play!\bin\Debug\OpenTK.dll
+C:\Users\Utente\Desktop\AIV\Consegne\Play!\Play!\bin\Debug\System.ValueTuple.dll
+C:\Users\Utente\Desktop\AIV\Consegne\Play!\Play!\bin\Debug\NVorbis.xml
+C:\Users\Utente\Desktop\AIV\Consegne\Play!\Play!\bin\Debug\OpenTK.pdb
+C:\Users\Utente\Desktop\AIV\Consegne\Play!\Play!\bin\Debug\OpenTK.xml
+C:\Users\Utente\Desktop\AIV\Consegne\Play!\Play!\bin\Debug\System.ValueTuple.xml
+C:\Users\Utente\Desktop\AIV\Consegne\Play!\Play!\obj\Debug\Play!.csproj.CopyComplete
+C:\Users\Utente\Desktop\AIV\Consegne\Play!\Play!\obj\Debug\Play!.exe
+C:\Users\Utente\Desktop\AIV\Consegne\Play!\Play!\obj\Debug\Play!.pdb
+C:\Users\Utente\Desktop\AIV\Consegne\Play!\Play!\bin\Debug\Assets\Tiled\cityTile.jpg
+C:\Users\Utente\Desktop\AIV\Consegne\Play!\Play!\bin\Debug\Assets\Tiled\PlayMap.tmx
+C:\Users\Utente\Desktop\AIV\Consegne\Play!\Play!\bin\Debug\Assets\Tiled\ExternalMap.tmx
+C:\Users\Utente\Desktop\AIV\Consegne\Play!\Play!\bin\Debug\Assets\Tiled\Play_map.tmx

@@ -1,0 +1,483 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E2EA1F2B-2DDE-4D03-8AF8-A1F23EA0CC44}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Play_</RootNamespace>
+    <AssemblyName>Play!</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="aiv-audio, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Aiv.Audio.0.2.2\lib\net40\aiv-audio.dll</HintPath>
+    </Reference>
+    <Reference Include="aiv-fast2d, Version=1.0.7798.31016, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Aiv.Fast2D.1.0.2\lib\net48\aiv-fast2d.dll</HintPath>
+    </Reference>
+    <Reference Include="NVorbis, Version=0.9.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\NVorbis.0.9.1\lib\net45\NVorbis.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenTK, Version=3.2.0.0, Culture=neutral, PublicKeyToken=bad199fe84eb3df4, processorArchitecture=MSIL">
+      <HintPath>..\packages\OpenTK.3.2\lib\net20\OpenTK.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.ValueTuple, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ValueTuple.4.5.0\lib\net47\System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Actors\Actor.cs" />
+    <Compile Include="Actors\Block.cs" />
+    <Compile Include="Actors\Enemy.cs" />
+    <Compile Include="Actors\Player.cs" />
+    <Compile Include="Actors\TileObj.cs" />
+    <Compile Include="Bullets\Bullet.cs" />
+    <Compile Include="Bullets\BulletsMgr.cs" />
+    <Compile Include="Bullets\EnemyBullet.cs" />
+    <Compile Include="Bullets\PlayerBullet.cs" />
+    <Compile Include="Controllers\Controller.cs" />
+    <Compile Include="Controllers\JoypadController.cs" />
+    <Compile Include="Controllers\KeyboardController.cs" />
+    <Compile Include="Controllers\KeysList.cs" />
+    <Compile Include="Engine\CameraMgr.cs" />
+    <Compile Include="Engine\Colliders\BoxCollider.cs" />
+    <Compile Include="Engine\Colliders\CircleCollider.cs" />
+    <Compile Include="Engine\Colliders\Collider.cs" />
+    <Compile Include="Engine\Colliders\ColliderFactory.cs" />
+    <Compile Include="Engine\Colliders\CompoundCollider.cs" />
+    <Compile Include="Engine\Collision.cs" />
+    <Compile Include="Engine\DrawMgr.cs" />
+    <Compile Include="Engine\Game.cs" />
+    <Compile Include="Engine\GameObject.cs" />
+    <Compile Include="Engine\GfxMgr.cs" />
+    <Compile Include="Engine\GUI\ProgressBar.cs" />
+    <Compile Include="Engine\GUI\Text\Font.cs" />
+    <Compile Include="Engine\GUI\Text\FontMgr.cs" />
+    <Compile Include="Engine\GUI\Text\TextChar.cs" />
+    <Compile Include="Engine\GUI\Text\TextObject.cs" />
+    <Compile Include="Engine\IDrawable.cs" />
+    <Compile Include="Engine\IUpdatable.cs" />
+    <Compile Include="Engine\Pathfinding\GridGraph.cs" />
+    <Compile Include="Engine\Pathfinding\GridPathfinder.cs" />
+    <Compile Include="Engine\Pathfinding\Node.cs" />
+    <Compile Include="Engine\Pathfinding\NodePath.cs" />
+    <Compile Include="Engine\Pathfinding\WeightedGraphAlgo.cs" />
+    <Compile Include="Engine\PhysicsMgr.cs" />
+    <Compile Include="Engine\RandomGenerator.cs" />
+    <Compile Include="Engine\RandomTimer.cs" />
+    <Compile Include="Engine\RigidBody.cs" />
+    <Compile Include="Engine\Tiled\TmxCell.cs" />
+    <Compile Include="Engine\Tiled\TmxGrid.cs" />
+    <Compile Include="Engine\Tiled\TmxLayer.cs" />
+    <Compile Include="Engine\Tiled\TmxNodeParser.cs" />
+    <Compile Include="Engine\Tiled\TmxProperties.cs" />
+    <Compile Include="Engine\Tiled\TmxReader.cs" />
+    <Compile Include="Engine\Tiled\TmxTileset.cs" />
+    <Compile Include="Engine\Tiled\TmxTileType.cs" />
+    <Compile Include="Engine\UpdateMgr.cs" />
+    <Compile Include="FSM\FollowState.cs" />
+    <Compile Include="FSM\RechargeState.cs" />
+    <Compile Include="FSM\ShootState.cs" />
+    <Compile Include="FSM\State.cs" />
+    <Compile Include="FSM\StateEnum.cs" />
+    <Compile Include="FSM\StateMachine.cs" />
+    <Compile Include="FSM\WalkState.cs" />
+    <Compile Include="PowerUps\PowerUp.cs" />
+    <Compile Include="PowerUps\PowerUpMgr.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Scene\GameOverScene.cs" />
+    <Compile Include="Scene\PlayScene.cs" />
+    <Compile Include="Scene\Scene.cs" />
+    <Compile Include="Scene\TitleScene.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="Assets\Tiled\ExternalMap.tmx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Assets\Tiled\PlayMap.tmx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="Assets\Tiled\Play_map.tmx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="OpenTK.dll.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Assets\Tiled\cityTile.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\MUSIC\1BITTopDownMusics - Track 01 %281BIT Adventure%29.wav" />
+    <Content Include="Assets\MUSIC\1BITTopDownMusics - Track 02 %281BIT Dark Cave%29.wav" />
+    <Content Include="Assets\MUSIC\1BITTopDownMusics - Track 03 %281BIT Eerie%29.wav" />
+    <Content Include="Assets\SFX\Attack01.wav" />
+    <Content Include="Assets\SFX\Attack02.wav" />
+    <Content Include="Assets\SFX\Attack03.wav" />
+    <Content Include="Assets\SFX\Death01.wav" />
+    <Content Include="Assets\SFX\Death02.wav" />
+    <Content Include="Assets\SFX\Fall01.wav" />
+    <Content Include="Assets\SFX\Hurt01.wav" />
+    <Content Include="Assets\SFX\Hurt02.wav" />
+    <Content Include="Assets\SFX\Jump01.wav" />
+    <Content Include="Assets\SFX\Jump02.wav" />
+    <Content Include="Assets\SFX\Jump03.wav" />
+    <Content Include="Assets\SFX\Land01.wav" />
+    <Content Include="Assets\SFX\MenuBack01.wav" />
+    <Content Include="Assets\SFX\MenuCursor01.wav" />
+    <Content Include="Assets\SFX\MenuValid01.wav" />
+    <Content Include="Assets\SFX\Pickup01.wav" />
+    <Content Include="Assets\SPRITES\ENEMIES\BLOB\ENEMIES_PixelPackTOPDOWN8BIT_Blob Death.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\SPRITES\ENEMIES\BLOB\ENEMIES_PixelPackTOPDOWN8BIT_Blob Hurt.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\SPRITES\ENEMIES\BLOB\ENEMIES_PixelPackTOPDOWN8BIT_Blob Idle.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\SPRITES\ENEMIES\BLOB\ENEMIES_PixelPackTOPDOWN8BIT_Blob Walk.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\SPRITES\ENEMIES\NEGABLOB\ENEMIES_PixelPackTOPDOWN8BIT_NegaBlob Death.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\SPRITES\ENEMIES\NEGABLOB\ENEMIES_PixelPackTOPDOWN8BIT_NegaBlob Hurt.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\SPRITES\ENEMIES\NEGABLOB\ENEMIES_PixelPackTOPDOWN8BIT_NegaBlob Idle.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\SPRITES\ENEMIES\NEGABLOB\ENEMIES_PixelPackTOPDOWN8BIT_NegaBlob Walk.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\SPRITES\ENEMIES\SNAKE\ENEMIES_PixelPackTOPDOWN8BIT_Snake Death.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\SPRITES\ENEMIES\SNAKE\ENEMIES_PixelPackTOPDOWN8BIT_Snake Idle D.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\SPRITES\ENEMIES\SNAKE\ENEMIES_PixelPackTOPDOWN8BIT_Snake Idle R.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\SPRITES\ENEMIES\SNAKE\ENEMIES_PixelPackTOPDOWN8BIT_Snake Idle U.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\SPRITES\ENEMIES\SNAKE\ENEMIES_PixelPackTOPDOWN8BIT_Snake Walk D.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\SPRITES\ENEMIES\SNAKE\ENEMIES_PixelPackTOPDOWN8BIT_Snake Walk R.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\SPRITES\ENEMIES\SNAKE\ENEMIES_PixelPackTOPDOWN8BIT_Snake Walk U.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\SPRITES\ENEMIES\SORCERER\ENEMIES_PixelPackTOPDOWN8BIT_Sorcerer Attack D.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\SPRITES\ENEMIES\SORCERER\ENEMIES_PixelPackTOPDOWN8BIT_Sorcerer Attack R.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\SPRITES\ENEMIES\SORCERER\ENEMIES_PixelPackTOPDOWN8BIT_Sorcerer Attack U.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\SPRITES\ENEMIES\SORCERER\ENEMIES_PixelPackTOPDOWN8BIT_Sorcerer Death D.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\SPRITES\ENEMIES\SORCERER\ENEMIES_PixelPackTOPDOWN8BIT_Sorcerer Hurt D.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\SPRITES\ENEMIES\SORCERER\ENEMIES_PixelPackTOPDOWN8BIT_Sorcerer Hurt R.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\SPRITES\ENEMIES\SORCERER\ENEMIES_PixelPackTOPDOWN8BIT_Sorcerer Hurt U.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\SPRITES\ENEMIES\SORCERER\ENEMIES_PixelPackTOPDOWN8BIT_Sorcerer Idle D.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\SPRITES\ENEMIES\SORCERER\ENEMIES_PixelPackTOPDOWN8BIT_Sorcerer Idle R.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\SPRITES\ENEMIES\SORCERER\ENEMIES_PixelPackTOPDOWN8BIT_Sorcerer Idle U.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\SPRITES\ENEMIES\SORCERER\ENEMIES_PixelPackTOPDOWN8BIT_Sorcerer Walk D.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\SPRITES\ENEMIES\SORCERER\ENEMIES_PixelPackTOPDOWN8BIT_Sorcerer Walk R.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\SPRITES\ENEMIES\SORCERER\ENEMIES_PixelPackTOPDOWN8BIT_Sorcerer Walk U.gif">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\SPRITES\ENEMIES\spritesheets\ENEMIES8bit_Blob Death.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\SPRITES\ENEMIES\spritesheets\ENEMIES8bit_Blob Hurt.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\SPRITES\ENEMIES\spritesheets\ENEMIES8bit_Blob Idle.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\SPRITES\ENEMIES\spritesheets\ENEMIES8bit_Blob Walk.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\SPRITES\ENEMIES\spritesheets\ENEMIES8bit_NegaBlob Death.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\SPRITES\ENEMIES\spritesheets\ENEMIES8bit_NegaBlob Hurt.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\SPRITES\ENEMIES\spritesheets\ENEMIES8bit_NegaBlob Idle.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\SPRITES\ENEMIES\spritesheets\ENEMIES8bit_NegaBlob Walk.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\SPRITES\ENEMIES\spritesheets\ENEMIES8bit_Snake Death.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\SPRITES\ENEMIES\spritesheets\ENEMIES8bit_Snake Idle D.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\SPRITES\ENEMIES\spritesheets\ENEMIES8bit_Snake Idle R.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\SPRITES\ENEMIES\spritesheets\ENEMIES8bit_Snake Idle U.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\SPRITES\ENEMIES\spritesheets\ENEMIES8bit_Snake Walk D.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\SPRITES\ENEMIES\spritesheets\ENEMIES8bit_Snake Walk R.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\SPRITES\ENEMIES\spritesheets\ENEMIES8bit_Snake Walk U.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\SPRITES\ENEMIES\spritesheets\ENEMIES8bit_Sorcerer Attack D.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\SPRITES\ENEMIES\spritesheets\ENEMIES8bit_Sorcerer Attack R.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\SPRITES\ENEMIES\spritesheets\ENEMIES8bit_Sorcerer Attack U.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\SPRITES\ENEMIES\spritesheets\ENEMIES8bit_Sorcerer Death D.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\SPRITES\ENEMIES\spritesheets\ENEMIES8bit_Sorcerer Hurt D.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\SPRITES\ENEMIES\spritesheets\ENEMIES8bit_Sorcerer Hurt R.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\SPRITES\ENEMIES\spritesheets\ENEMIES8bit_Sorcerer Hurt U.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\SPRITES\ENEMIES\spritesheets\ENEMIES8bit_Sorcerer Idle D.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\SPRITES\ENEMIES\spritesheets\ENEMIES8bit_Sorcerer Idle R.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\SPRITES\ENEMIES\spritesheets\ENEMIES8bit_Sorcerer Idle U.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\SPRITES\ENEMIES\spritesheets\ENEMIES8bit_Sorcerer Walk D.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\SPRITES\ENEMIES\spritesheets\ENEMIES8bit_Sorcerer Walk R.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\SPRITES\ENEMIES\spritesheets\ENEMIES8bit_Sorcerer Walk U.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Assets\SPRITES\HEROS\ADVENTURER\HEROS_PixelPackTOPDOWN8BIT_Adventurer Attack D.gif" />
+    <Content Include="Assets\SPRITES\HEROS\ADVENTURER\HEROS_PixelPackTOPDOWN8BIT_Adventurer Attack R.gif" />
+    <Content Include="Assets\SPRITES\HEROS\ADVENTURER\HEROS_PixelPackTOPDOWN8BIT_Adventurer Attack U.gif" />
+    <Content Include="Assets\SPRITES\HEROS\ADVENTURER\HEROS_PixelPackTOPDOWN8BIT_Adventurer Death.gif" />
+    <Content Include="Assets\SPRITES\HEROS\ADVENTURER\HEROS_PixelPackTOPDOWN8BIT_Adventurer Hurt D.gif" />
+    <Content Include="Assets\SPRITES\HEROS\ADVENTURER\HEROS_PixelPackTOPDOWN8BIT_Adventurer Hurt R.gif" />
+    <Content Include="Assets\SPRITES\HEROS\ADVENTURER\HEROS_PixelPackTOPDOWN8BIT_Adventurer Hurt U.gif" />
+    <Content Include="Assets\SPRITES\HEROS\ADVENTURER\HEROS_PixelPackTOPDOWN8BIT_Adventurer Idle D.gif" />
+    <Content Include="Assets\SPRITES\HEROS\ADVENTURER\HEROS_PixelPackTOPDOWN8BIT_Adventurer Idle R.gif" />
+    <Content Include="Assets\SPRITES\HEROS\ADVENTURER\HEROS_PixelPackTOPDOWN8BIT_Adventurer Idle U.gif" />
+    <Content Include="Assets\SPRITES\HEROS\ADVENTURER\HEROS_PixelPackTOPDOWN8BIT_Adventurer JumpRoll D.gif" />
+    <Content Include="Assets\SPRITES\HEROS\ADVENTURER\HEROS_PixelPackTOPDOWN8BIT_Adventurer JumpRoll R.gif" />
+    <Content Include="Assets\SPRITES\HEROS\ADVENTURER\HEROS_PixelPackTOPDOWN8BIT_Adventurer JumpRoll U.gif" />
+    <Content Include="Assets\SPRITES\HEROS\ADVENTURER\HEROS_PixelPackTOPDOWN8BIT_Adventurer Push D.gif" />
+    <Content Include="Assets\SPRITES\HEROS\ADVENTURER\HEROS_PixelPackTOPDOWN8BIT_Adventurer Push R.gif" />
+    <Content Include="Assets\SPRITES\HEROS\ADVENTURER\HEROS_PixelPackTOPDOWN8BIT_Adventurer Push U.gif" />
+    <Content Include="Assets\SPRITES\HEROS\ADVENTURER\HEROS_PixelPackTOPDOWN8BIT_Adventurer Walk D.gif" />
+    <Content Include="Assets\SPRITES\HEROS\ADVENTURER\HEROS_PixelPackTOPDOWN8BIT_Adventurer Walk R.gif" />
+    <Content Include="Assets\SPRITES\HEROS\ADVENTURER\HEROS_PixelPackTOPDOWN8BIT_Adventurer Walk U.gif" />
+    <Content Include="Assets\SPRITES\HEROS\DOGGO\HEROS_PixelPackTOPDOWN8BIT_Dog Attack D.gif" />
+    <Content Include="Assets\SPRITES\HEROS\DOGGO\HEROS_PixelPackTOPDOWN8BIT_Dog Attack R.gif" />
+    <Content Include="Assets\SPRITES\HEROS\DOGGO\HEROS_PixelPackTOPDOWN8BIT_Dog Attack U.gif" />
+    <Content Include="Assets\SPRITES\HEROS\DOGGO\HEROS_PixelPackTOPDOWN8BIT_Dog Death.gif" />
+    <Content Include="Assets\SPRITES\HEROS\DOGGO\HEROS_PixelPackTOPDOWN8BIT_Dog Hurt D.gif" />
+    <Content Include="Assets\SPRITES\HEROS\DOGGO\HEROS_PixelPackTOPDOWN8BIT_Dog Hurt R.gif" />
+    <Content Include="Assets\SPRITES\HEROS\DOGGO\HEROS_PixelPackTOPDOWN8BIT_Dog Hurt U.gif" />
+    <Content Include="Assets\SPRITES\HEROS\DOGGO\HEROS_PixelPackTOPDOWN8BIT_Dog Idle D.gif" />
+    <Content Include="Assets\SPRITES\HEROS\DOGGO\HEROS_PixelPackTOPDOWN8BIT_Dog Idle R.gif" />
+    <Content Include="Assets\SPRITES\HEROS\DOGGO\HEROS_PixelPackTOPDOWN8BIT_Dog Idle U.gif" />
+    <Content Include="Assets\SPRITES\HEROS\DOGGO\HEROS_PixelPackTOPDOWN8BIT_Dog JumpRoll D.gif" />
+    <Content Include="Assets\SPRITES\HEROS\DOGGO\HEROS_PixelPackTOPDOWN8BIT_Dog JumpRoll R.gif" />
+    <Content Include="Assets\SPRITES\HEROS\DOGGO\HEROS_PixelPackTOPDOWN8BIT_Dog JumpRoll U.gif" />
+    <Content Include="Assets\SPRITES\HEROS\DOGGO\HEROS_PixelPackTOPDOWN8BIT_Dog Push D.gif" />
+    <Content Include="Assets\SPRITES\HEROS\DOGGO\HEROS_PixelPackTOPDOWN8BIT_Dog Push R.gif" />
+    <Content Include="Assets\SPRITES\HEROS\DOGGO\HEROS_PixelPackTOPDOWN8BIT_Dog Push U.gif" />
+    <Content Include="Assets\SPRITES\HEROS\DOGGO\HEROS_PixelPackTOPDOWN8BIT_Dog Walk D.gif" />
+    <Content Include="Assets\SPRITES\HEROS\DOGGO\HEROS_PixelPackTOPDOWN8BIT_Dog Walk R.gif" />
+    <Content Include="Assets\SPRITES\HEROS\DOGGO\HEROS_PixelPackTOPDOWN8BIT_Dog Walk U.gif" />
+    <Content Include="Assets\SPRITES\HEROS\PRINCESS\HEROS_PixelPackTOPDOWN8BIT_Princess Attack D.gif" />
+    <Content Include="Assets\SPRITES\HEROS\PRINCESS\HEROS_PixelPackTOPDOWN8BIT_Princess Attack R.gif" />
+    <Content Include="Assets\SPRITES\HEROS\PRINCESS\HEROS_PixelPackTOPDOWN8BIT_Princess Attack U.gif" />
+    <Content Include="Assets\SPRITES\HEROS\PRINCESS\HEROS_PixelPackTOPDOWN8BIT_Princess Death D.gif" />
+    <Content Include="Assets\SPRITES\HEROS\PRINCESS\HEROS_PixelPackTOPDOWN8BIT_Princess Hurt D.gif" />
+    <Content Include="Assets\SPRITES\HEROS\PRINCESS\HEROS_PixelPackTOPDOWN8BIT_Princess Hurt R.gif" />
+    <Content Include="Assets\SPRITES\HEROS\PRINCESS\HEROS_PixelPackTOPDOWN8BIT_Princess Hurt U.gif" />
+    <Content Include="Assets\SPRITES\HEROS\PRINCESS\HEROS_PixelPackTOPDOWN8BIT_Princess Idle D.gif" />
+    <Content Include="Assets\SPRITES\HEROS\PRINCESS\HEROS_PixelPackTOPDOWN8BIT_Princess Idle R.gif" />
+    <Content Include="Assets\SPRITES\HEROS\PRINCESS\HEROS_PixelPackTOPDOWN8BIT_Princess Idle U.gif" />
+    <Content Include="Assets\SPRITES\HEROS\PRINCESS\HEROS_PixelPackTOPDOWN8BIT_Princess JumpRoll D.gif" />
+    <Content Include="Assets\SPRITES\HEROS\PRINCESS\HEROS_PixelPackTOPDOWN8BIT_Princess JumpRoll R.gif" />
+    <Content Include="Assets\SPRITES\HEROS\PRINCESS\HEROS_PixelPackTOPDOWN8BIT_Princess JumpRoll U.gif" />
+    <Content Include="Assets\SPRITES\HEROS\PRINCESS\HEROS_PixelPackTOPDOWN8BIT_Princess Push D.gif" />
+    <Content Include="Assets\SPRITES\HEROS\PRINCESS\HEROS_PixelPackTOPDOWN8BIT_Princess Push R.gif" />
+    <Content Include="Assets\SPRITES\HEROS\PRINCESS\HEROS_PixelPackTOPDOWN8BIT_Princess Push U.gif" />
+    <Content Include="Assets\SPRITES\HEROS\PRINCESS\HEROS_PixelPackTOPDOWN8BIT_Princess Walk D.gif" />
+    <Content Include="Assets\SPRITES\HEROS\PRINCESS\HEROS_PixelPackTOPDOWN8BIT_Princess Walk R.gif" />
+    <Content Include="Assets\SPRITES\HEROS\PRINCESS\HEROS_PixelPackTOPDOWN8BIT_Princess Walk U.gif" />
+    <Content Include="Assets\SPRITES\HEROS\spritesheets\HEROS8bit_Adventurer Attack D.png" />
+    <Content Include="Assets\SPRITES\HEROS\spritesheets\HEROS8bit_Adventurer Attack R.png" />
+    <Content Include="Assets\SPRITES\HEROS\spritesheets\HEROS8bit_Adventurer Attack U.png" />
+    <Content Include="Assets\SPRITES\HEROS\spritesheets\HEROS8bit_Adventurer Death.png" />
+    <Content Include="Assets\SPRITES\HEROS\spritesheets\HEROS8bit_Adventurer Hurt D.png" />
+    <Content Include="Assets\SPRITES\HEROS\spritesheets\HEROS8bit_Adventurer Hurt R.png" />
+    <Content Include="Assets\SPRITES\HEROS\spritesheets\HEROS8bit_Adventurer Hurt U.png" />
+    <Content Include="Assets\SPRITES\HEROS\spritesheets\HEROS8bit_Adventurer Idle D.png" />
+    <Content Include="Assets\SPRITES\HEROS\spritesheets\HEROS8bit_Adventurer Idle R.png" />
+    <Content Include="Assets\SPRITES\HEROS\spritesheets\HEROS8bit_Adventurer Idle U.png" />
+    <Content Include="Assets\SPRITES\HEROS\spritesheets\HEROS8bit_Adventurer JumpRoll D.png" />
+    <Content Include="Assets\SPRITES\HEROS\spritesheets\HEROS8bit_Adventurer JumpRoll R.png" />
+    <Content Include="Assets\SPRITES\HEROS\spritesheets\HEROS8bit_Adventurer JumpRoll U.png" />
+    <Content Include="Assets\SPRITES\HEROS\spritesheets\HEROS8bit_Adventurer Push D.png" />
+    <Content Include="Assets\SPRITES\HEROS\spritesheets\HEROS8bit_Adventurer Push R.png" />
+    <Content Include="Assets\SPRITES\HEROS\spritesheets\HEROS8bit_Adventurer Push U.png" />
+    <Content Include="Assets\SPRITES\HEROS\spritesheets\HEROS8bit_Adventurer Walk D.png" />
+    <Content Include="Assets\SPRITES\HEROS\spritesheets\HEROS8bit_Adventurer Walk R.png" />
+    <Content Include="Assets\SPRITES\HEROS\spritesheets\HEROS8bit_Adventurer Walk U.png" />
+    <Content Include="Assets\SPRITES\HEROS\spritesheets\HEROS8bit_Dog Attack D.png" />
+    <Content Include="Assets\SPRITES\HEROS\spritesheets\HEROS8bit_Dog Attack R.png" />
+    <Content Include="Assets\SPRITES\HEROS\spritesheets\HEROS8bit_Dog Attack U.png" />
+    <Content Include="Assets\SPRITES\HEROS\spritesheets\HEROS8bit_Dog Death.png" />
+    <Content Include="Assets\SPRITES\HEROS\spritesheets\HEROS8bit_Dog Hurt D.png" />
+    <Content Include="Assets\SPRITES\HEROS\spritesheets\HEROS8bit_Dog Hurt R.png" />
+    <Content Include="Assets\SPRITES\HEROS\spritesheets\HEROS8bit_Dog Hurt U.png" />
+    <Content Include="Assets\SPRITES\HEROS\spritesheets\HEROS8bit_Dog Idle D.png" />
+    <Content Include="Assets\SPRITES\HEROS\spritesheets\HEROS8bit_Dog Idle R.png" />
+    <Content Include="Assets\SPRITES\HEROS\spritesheets\HEROS8bit_Dog Idle U.png" />
+    <Content Include="Assets\SPRITES\HEROS\spritesheets\HEROS8bit_Dog JumpRoll D.png" />
+    <Content Include="Assets\SPRITES\HEROS\spritesheets\HEROS8bit_Dog JumpRoll R.png" />
+    <Content Include="Assets\SPRITES\HEROS\spritesheets\HEROS8bit_Dog JumpRoll U.png" />
+    <Content Include="Assets\SPRITES\HEROS\spritesheets\HEROS8bit_Dog Push D.png" />
+    <Content Include="Assets\SPRITES\HEROS\spritesheets\HEROS8bit_Dog Push R.png" />
+    <Content Include="Assets\SPRITES\HEROS\spritesheets\HEROS8bit_Dog Push U.png" />
+    <Content Include="Assets\SPRITES\HEROS\spritesheets\HEROS8bit_Dog Walk D.png" />
+    <Content Include="Assets\SPRITES\HEROS\spritesheets\HEROS8bit_Dog Walk R.png" />
+    <Content Include="Assets\SPRITES\HEROS\spritesheets\HEROS8bit_Dog Walk U.png" />
+    <Content Include="Assets\SPRITES\HEROS\spritesheets\HEROS8bit_Princess Attack D.png" />
+    <Content Include="Assets\SPRITES\HEROS\spritesheets\HEROS8bit_Princess Attack R.png" />
+    <Content Include="Assets\SPRITES\HEROS\spritesheets\HEROS8bit_Princess Attack U.png" />
+    <Content Include="Assets\SPRITES\HEROS\spritesheets\HEROS8bit_Princess Death D.png" />
+    <Content Include="Assets\SPRITES\HEROS\spritesheets\HEROS8bit_Princess Hurt D.png" />
+    <Content Include="Assets\SPRITES\HEROS\spritesheets\HEROS8bit_Princess Hurt R.png" />
+    <Content Include="Assets\SPRITES\HEROS\spritesheets\HEROS8bit_Princess Hurt U.png" />
+    <Content Include="Assets\SPRITES\HEROS\spritesheets\HEROS8bit_Princess Idle D.png" />
+    <Content Include="Assets\SPRITES\HEROS\spritesheets\HEROS8bit_Princess Idle R.png" />
+    <Content Include="Assets\SPRITES\HEROS\spritesheets\HEROS8bit_Princess Idle U.png" />
+    <Content Include="Assets\SPRITES\HEROS\spritesheets\HEROS8bit_Princess JumpRoll D.png" />
+    <Content Include="Assets\SPRITES\HEROS\spritesheets\HEROS8bit_Princess JumpRoll R.png" />
+    <Content Include="Assets\SPRITES\HEROS\spritesheets\HEROS8bit_Princess JumpRoll U.png" />
+    <Content Include="Assets\SPRITES\HEROS\spritesheets\HEROS8bit_Princess Push D.png" />
+    <Content Include="Assets\SPRITES\HEROS\spritesheets\HEROS8bit_Princess Push R.png" />
+    <Content Include="Assets\SPRITES\HEROS\spritesheets\HEROS8bit_Princess Push U.png" />
+    <Content Include="Assets\SPRITES\HEROS\spritesheets\HEROS8bit_Princess Walk D.png" />
+    <Content Include="Assets\SPRITES\HEROS\spritesheets\HEROS8bit_Princess Walk R.png" />
+    <Content Include="Assets\SPRITES\HEROS\spritesheets\HEROS8bit_Princess Walk U.png" />
+    <Content Include="Assets\SPRITES\ITEMS\item8BIT_bananas.png" />
+    <Content Include="Assets\SPRITES\ITEMS\item8BIT_bell.png" />
+    <Content Include="Assets\SPRITES\ITEMS\item8BIT_bomb.png" />
+    <Content Include="Assets\SPRITES\ITEMS\item8BIT_bones.png" />
+    <Content Include="Assets\SPRITES\ITEMS\item8BIT_book.png" />
+    <Content Include="Assets\SPRITES\ITEMS\item8BIT_boots.png" />
+    <Content Include="Assets\SPRITES\ITEMS\item8BIT_bow.png" />
+    <Content Include="Assets\SPRITES\ITEMS\item8BIT_chest.png" />
+    <Content Include="Assets\SPRITES\ITEMS\item8BIT_coin.png" />
+    <Content Include="Assets\SPRITES\ITEMS\item8BIT_compass.png" />
+    <Content Include="Assets\SPRITES\ITEMS\item8BIT_crown.png" />
+    <Content Include="Assets\SPRITES\ITEMS\item8BIT_feather.png" />
+    <Content Include="Assets\SPRITES\ITEMS\item8BIT_floppydisk.png" />
+    <Content Include="Assets\SPRITES\ITEMS\item8BIT_gem.png" />
+    <Content Include="Assets\SPRITES\ITEMS\item8BIT_glove.png" />
+    <Content Include="Assets\SPRITES\ITEMS\item8BIT_hammer.png" />
+    <Content Include="Assets\SPRITES\ITEMS\item8BIT_harp.png" />
+    <Content Include="Assets\SPRITES\ITEMS\item8BIT_heart.png" />
+    <Content Include="Assets\SPRITES\ITEMS\item8BIT_key.png" />
+    <Content Include="Assets\SPRITES\ITEMS\item8BIT_lamp.png" />
+    <Content Include="Assets\SPRITES\ITEMS\item8BIT_leaf.png" />
+    <Content Include="Assets\SPRITES\ITEMS\item8BIT_mirror.png" />
+    <Content Include="Assets\SPRITES\ITEMS\item8BIT_moneybag.png" />
+    <Content Include="Assets\SPRITES\ITEMS\item8BIT_mushroom.png" />
+    <Content Include="Assets\SPRITES\ITEMS\item8BIT_pickaxe.png" />
+    <Content Include="Assets\SPRITES\ITEMS\item8BIT_pot.png" />
+    <Content Include="Assets\SPRITES\ITEMS\item8BIT_potion.png" />
+    <Content Include="Assets\SPRITES\ITEMS\item8BIT_ring.png" />
+    <Content Include="Assets\SPRITES\ITEMS\item8BIT_scroll.png" />
+    <Content Include="Assets\SPRITES\ITEMS\item8BIT_seashell.png" />
+    <Content Include="Assets\SPRITES\ITEMS\item8BIT_shield.png" />
+    <Content Include="Assets\SPRITES\ITEMS\item8BIT_shovel.png" />
+    <Content Include="Assets\SPRITES\ITEMS\item8BIT_skull.png" />
+    <Content Include="Assets\SPRITES\ITEMS\item8BIT_skullkey.png" />
+    <Content Include="Assets\SPRITES\ITEMS\item8BIT_sword.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
